@@ -1,0 +1,26 @@
+<div class="data__score" style="width:{{wf {&quot;path&quot;:&quot;total-score&quot;,&quot;type&quot;:&quot;Number&quot;\} }}%; height:100%; background-color: #ADCFD3;">{{wf {&quot;path&quot;:&quot;total-score&quot;,&quot;type&quot;:&quot;Number&quot;\} }}</div>
+
+<script>
+const numberValue = document.querySelectorAll('.number-value')
+numberValue.forEach(each => {
+if(numberValue >= 0 && numberValue <=19){
+each.innerHTML = "1/5"
+each.style.backgroundColor = "red"
+}else if(numberValue >= 20 && numberValue <=39){
+each.innerHTML = "2/5"
+each.style.backgroundColor = "red"
+}else if(numberValue >= 40 && numberValue <=59){
+each.innerHTML = "3/5"
+each.style.backgroundColor = "red"
+}else if(numberValue >= 60 && numberValue <=79){
+each.innerHTML = "4/5"
+each.style.backgroundColor = "red"
+}else if(numberValue >= 80 && numberValue <=100){
+each.innerHTML = "5/5"
+each.style.backgroundColor = "red"
+}else{
+each.innerHTML = "invalid value"
+each.style.backgroundColor = "red"
+}
+})
+</script>
